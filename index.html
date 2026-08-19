@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>John Kennedy — security engineer &amp; AI systems architect</title>
+    <meta
+      name="description"
+      content="John Kennedy builds AI-driven security automation. Custom MCP servers, penetration testing agents, and infrastructure that holds under pressure."
+    />
+    <meta name="theme-color" content="#0A1220" />
+    <meta property="og:title" content="John Kennedy — security engineer &amp; AI systems architect" />
+    <meta
+      property="og:description"
+      content="AI-driven security automation, custom MCP servers, and penetration testing infrastructure."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("jk-theme");
+          var theme =
+            stored ||
+            (window.matchMedia("(prefers-color-scheme: light)").matches
+              ? "light"
+              : "dark");
+          document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.style.colorScheme = theme;
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#top">Skip to content</a>
+
+    <header class="site-header">
+      <a class="mark" href="#top">JK</a><!-- John Kennedy -->
+      <nav class="nav" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#practice">Practice</a>
+        <a href="#notes">Notes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button
+        class="lights"
+        id="lights"
+        type="button"
+        aria-pressed="false"
+        aria-label="Switch to light theme"
+      >
+        <span class="lights-track" aria-hidden="true">
+          <span class="lights-knob"></span>
+        </span>
+        <span class="lights-copy">
+          <span class="lights-label">Lights</span>
+          <span class="lights-state">Off</span>
+        </span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="thesis">
+        <div class="hero-copy">
+          <p class="eyebrow">Security engineering / AI automation</p>
+          <h1 id="thesis">
+            I automate the mechanical parts of pentesting so humans can focus on
+            <em>thinking creatively</em>.
+          </h1>
+          <p class="lede">
+            Custom MCP servers, AI-driven agents, and infrastructure that holds
+            under pressure. 40+ assessments, 4 production security MCPs, and a
+            philosophy that automation is intelligence, not a checklist.
+          </p>
+        </div>
+
+        <aside class="dossier" aria-label="Profile">
+          <p class="dossier-stamp">Sheet 01 · identity</p>
+          <p class="pill">Available for security work</p>
+          <dl>
+            <div>
+              <dt>Name</dt>
+              <dd>John Kennedy</dd>
+            </div>
+            <div>
+              <dt>Practice</dt>
+              <dd>Security engineering &amp; AI systems</dd>
+            </div>
+            <div>
+              <dt>Location</dt>
+              <dd>Omaha, NE</dd>
+            </div>
+            <div>
+              <dt>Certs</dt>
+              <dd>OSCP · eCPPT · SANS 560</dd>
+            </div>
+            <div>
+              <dt>Reach</dt>
+              <dd>
+                <a href="mailto:cdrkennedy@gmail.com">cdrkennedy@gmail.com</a>
+              </dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section id="work" class="section work" aria-labelledby="work-title">
+        <div class="section-head">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="work-title">Things that had to work under real conditions.</h2>
+        </div>
+
+        <ul class="work-list">
+          <li>
+            <div class="work-row">
+              <div class="work-main">
+                <h3>Security MCP servers</h3>
+                <p>
+                  Four custom Model Context Protocol servers wrapping Metasploit,
+                  Kali, OWASP ZAP, and Burp Suite. Claude orchestrates the tools;
+                  the human decides what to exploit.
+                </p>
+              </div>
+              <p class="work-meta">MCP · Python · TypeScript</p>
+            </div>
+          </li>
+          <li>
+            <div class="work-row">
+              <div class="work-main">
+                <h3>AI-driven pentest automation</h3>
+                <p>
+                  Automated HTB machine assessments end-to-end: enumeration,
+                  vulnerability ID, exploitation, flag extraction, and
+                  Core Impact-style reporting. 8+ machines, 5x cost reduction.
+                </p>
+              </div>
+              <p class="work-meta">Claude · agents · automation</p>
+            </div>
+          </li>
+          <li>
+            <div class="work-row">
+              <div class="work-main">
+                <h3>AWS pentest infrastructure</h3>
+                <p>
+                  Fully isolated assessment environment for Ryan Consulting.
+                  Private subnets, VPN-only access, Kali with xrdp, security
+                  groups scoped to VPN CIDR. No IP leaks between clients.
+                </p>
+              </div>
+              <p class="work-meta">AWS · VPC · OpenVPN</p>
+            </div>
+          </li>
+          <li>
+            <div class="work-row">
+              <div class="work-main">
+                <h3>Multi-MCP chatbot</h3>
+                <p>
+                  1,200-line GUI application supporting concurrent multi-MCP
+                  interaction. Dynamic tool discovery, context-aware selection,
+                  and markdown report rendering for non-technical assessors.
+                </p>
+              </div>
+              <p class="work-meta">Python · GUI · multi-agent</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="practice" class="section practice" aria-labelledby="practice-title">
+        <div class="section-head">
+          <p class="eyebrow">Practice</p>
+          <h2 id="practice-title">How the work actually gets done.</h2>
+        </div>
+        <div class="practice-grid">
+          <article>
+            <h3>Automate the mechanical</h3>
+            <p>
+              Reconnaissance, enumeration, evidence collection, initial
+              reporting. AI handles the systematic work. Humans handle
+              creative exploitation and business risk.
+            </p>
+          </article>
+          <article>
+            <h3>Intelligence, not checklists</h3>
+            <p>
+              A vulnerability scan is a map of where to look, not a report.
+              The value is in deciding which finding a real attacker would
+              actually use, and what it costs the business.
+            </p>
+          </article>
+          <article>
+            <h3>Ship the remediation</h3>
+            <p>
+              Repro steps, CVSS scores, and a patch someone can merge.
+              Executive-ready reports with risk prioritization. If it
+              does not lead to a fix, it did not happen.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="notes" class="section notes" aria-labelledby="notes-title">
+        <div class="section-head">
+          <p class="eyebrow">Field notes</p>
+          <h2 id="notes-title">Lessons from 40+ assessments.</h2>
+        </div>
+        <div class="notes-list">
+          <article>
+            <p class="note-date">On MCP architecture</p>
+            <h3>Wrap the tool, not the workflow</h3>
+            <p>
+              A good MCP server exposes tool functions, not opinions.
+              Let the model decide when to run nmap versus CrackMapExec.
+              The protocol is a bridge, not a script.
+            </p>
+          </article>
+          <article>
+            <p class="note-date">On cost</p>
+            <h3>Model selection is a budget decision</h3>
+            <p>
+              Switching from Opus to Sonnet cut assessment costs by 5x
+              without losing quality. Token budgeting and intelligent
+              model selection matter more than prompt engineering.
+            </p>
+          </article>
+          <article>
+            <p class="note-date">On isolation</p>
+            <h3>Scope contamination kills credibility</h3>
+            <p>
+              Multi-client work requires hard isolation. No shared IPs,
+              no shared tooling state, no ambient credentials.
+              The infrastructure is the first thing you audit.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact" aria-labelledby="contact-title">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">A specific problem beats a warm intro.</h2>
+        <p class="contact-lede">
+          Security assessment, MCP architecture, AI-driven automation.
+          Tell me what you are trying to protect and I will tell you if I can help.
+        </p>
+        <p class="contact-links">
+          <a class="contact-email" href="mailto:cdrkennedy@gmail.com"
+            >cdrkennedy@gmail.com</a
+          >
+          <a href="https://github.com/clubjk">GitHub</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year">2026</span> John Kennedy</p>
+      <p class="footer-note">Built as a static page. No analytics. No third-party requests.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
