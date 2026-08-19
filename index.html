@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>John Kennedy — security engineer &amp; AI systems architect</title>
+    <title>John Kennedy — pentester</title>
     <meta
       name="description"
-      content="John Kennedy builds AI-driven security automation. Custom MCP servers, pentest agents, a compiled second brain of tradecraft, and a disclosed 0-day."
+      content="John Kennedy is an expert penetration tester. OSCP, OSCE, a disclosed 0-day, 40+ assessments. Agents now 10-100x recon, enumeration, evidence, and first-pass reporting."
     />
     <meta name="theme-color" content="#0A1220" />
-    <meta property="og:title" content="John Kennedy — security engineer &amp; AI systems architect" />
+    <meta property="og:title" content="John Kennedy — pentester" />
     <meta
       property="og:description"
-      content="AI-driven security automation, custom MCP servers, pentest agents, and a decade of notes the models can query."
+      content="Expert pentesting, agent-amplified. Same tradecraft. 10-100x the ground covered."
     />
     <meta property="og:type" content="website" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -65,21 +65,23 @@
     <main id="top">
       <section class="hero" aria-labelledby="thesis">
         <div class="hero-copy">
-          <p class="eyebrow">Security engineering / AI automation</p>
+          <p class="eyebrow">Penetration testing / OSCP · OSCE</p>
           <h1 id="thesis">
-            I automate the mechanical parts of pentesting so humans can focus on
-            <em>thinking creatively</em>.
+            I am a pentester. Agents now
+            <em>10–100×</em>
+            what I can cover in a week.
           </h1>
           <p class="lede">
-            Agent loops, custom MCP servers, and a decade of notes compiled so
-            models can retrieve tradecraft. 40+ assessments, a disclosed 0-day,
-            and a practice that treats automation as intelligence, not a checklist.
+            Decade of tradecraft: 40+ assessments, a disclosed remote 0-day,
+            Active Directory, web, API, and internal networks. Agents run recon,
+            enumeration, evidence, and the first report in parallel. I stay on
+            the exploit path, the business risk, and the patch.
           </p>
         </div>
 
         <aside class="dossier" aria-label="Profile">
           <p class="dossier-stamp">Sheet 01 · identity</p>
-          <p class="pill">Available for security work</p>
+          <p class="pill">Available for pentest work</p>
           <dl>
             <div>
               <dt>Name</dt>
@@ -87,7 +89,7 @@
             </div>
             <div>
               <dt>Practice</dt>
-              <dd>Security engineering &amp; AI systems</dd>
+              <dd>Penetration testing</dd>
             </div>
             <div>
               <dt>Location</dt>
@@ -114,72 +116,10 @@
       <section id="work" class="section work" aria-labelledby="work-title">
         <div class="section-head">
           <p class="eyebrow">Selected work</p>
-          <h2 id="work-title">Things that had to work under real conditions.</h2>
+          <h2 id="work-title">The tradecraft, then the multiplier.</h2>
         </div>
 
         <ul class="work-list">
-          <li>
-            <div class="work-row">
-              <div class="work-main">
-                <h3>htb-pwner agent</h3>
-                <p>
-                  A Claude Code agent that takes a target IP, fans out subagents,
-                  and returns user/root plus a walkthrough an intermediate analyst
-                  can replay. Each finding gets a description and a fix. Brute force
-                  is skipped on purpose: it burns tokens and proves nothing. HTB API
-                  token wired in so the agent can spawn boxes and submit flags.
-                  Blue, Lame, Legacy, Devel, Strutted, Bamboo, Arctic, Editorial.
-                  Later runs dropped the Kali GUI entirely. Frontier models install
-                  their own tools and write bespoke Python exploits.
-                </p>
-              </div>
-              <p class="work-meta">Claude Code · HTB · agents</p>
-            </div>
-          </li>
-          <li>
-            <div class="work-row">
-              <div class="work-main">
-                <h3>Security MCP servers</h3>
-                <p>
-                  Four custom Model Context Protocol servers wrapping Metasploit,
-                  Kali, OWASP ZAP, and Burp Suite. MetasploitMCP is an RPC bridge
-                  exposing 12+ functions (list exploits, generate payload, run
-                  module, list sessions). Transports: stdio and HTTP/SSE. Dual
-                  endpoints: Anthropic public API and AWS Bedrock. Claude
-                  orchestrates the tools; the human decides what to exploit.
-                </p>
-              </div>
-              <p class="work-meta">MCP · Python · TypeScript</p>
-            </div>
-          </li>
-          <li>
-            <div class="work-row">
-              <div class="work-main">
-                <h3>Compiled second brain</h3>
-                <p>
-                  Ten years of raw lab notes (OSCP, OSCE, AD labs, HTB, API
-                  testing, AWS security) compiled into queryable wikis: pentest
-                  methodology, Active Directory attack paths, API testing, and AI
-                  tooling. Raw sources stay. Synthesized articles are what the
-                  agents actually retrieve. The vault is the context window.
-                </p>
-              </div>
-              <p class="work-meta">Obsidian · retrieval · tradecraft</p>
-            </div>
-          </li>
-          <li>
-            <div class="work-row">
-              <div class="work-main">
-                <h3>AWS pentest infrastructure</h3>
-                <p>
-                  Fully isolated assessment environment for Ryan Consulting.
-                  Private subnets, VPN-only access, Kali with xrdp, security
-                  groups scoped to VPN CIDR. No IP leaks between clients.
-                </p>
-              </div>
-              <p class="work-meta">AWS · VPC · OpenVPN</p>
-            </div>
-          </li>
           <li>
             <div class="work-row">
               <div class="work-main">
@@ -193,7 +133,8 @@
                     >Finding &amp; Exploiting Zerodays (Yes, you can do this!)</a
                   >
                   at BSides Iowa 2018. Same thread as SLAE64: custom shellcode,
-                  encoders, and an AES crypter.
+                  encoders, and an AES crypter. This is the floor. Agents sit on
+                  top of it, not instead of it.
                 </p>
               </div>
               <p class="work-meta">Exploit-DB · BSides · SLAE64</p>
@@ -202,14 +143,83 @@
           <li>
             <div class="work-row">
               <div class="work-main">
-                <h3>Multi-MCP chatbot</h3>
+                <h3>40+ assessments, isolated infra</h3>
                 <p>
-                  1,200-line GUI application supporting concurrent multi-MCP
-                  interaction. Dynamic tool discovery, context-aware selection,
-                  and markdown report rendering for non-technical assessors.
+                  External, internal, AD, web, and API work across concurrent
+                  clients. Isolated AWS environment for Ryan Consulting: private
+                  subnets, VPN-only access, Kali with xrdp, security groups
+                  scoped to VPN CIDR. No shared IPs, no leaked tooling state,
+                  no ambient credentials between jobs.
                 </p>
               </div>
-              <p class="work-meta">Python · GUI · multi-agent</p>
+              <p class="work-meta">Pentest · AWS · OpenVPN</p>
+            </div>
+          </li>
+          <li>
+            <div class="work-row">
+              <div class="work-main">
+                <h3>htb-pwner: one operator, many paths</h3>
+                <p>
+                  A Claude Code agent that takes a target, fans out subagents,
+                  and comes back with user/root plus a walkthrough an
+                  intermediate analyst can replay. Each finding gets a
+                  description and a fix. Brute force is skipped on purpose: it
+                  burns tokens and proves nothing. HTB API wired so the agent
+                  can spawn boxes and submit flags. Blue, Lame, Legacy, Devel,
+                  Strutted, Bamboo, Arctic, Editorial. Later runs dropped the
+                  Kali GUI. Frontier models install their own tools and write
+                  bespoke Python exploits. That is the 10–100×: parallel
+                  attack paths, not a faster nmap.
+                </p>
+              </div>
+              <p class="work-meta">Agents · HTB · Claude Code</p>
+            </div>
+          </li>
+          <li>
+            <div class="work-row">
+              <div class="work-main">
+                <h3>Security MCP servers</h3>
+                <p>
+                  Four custom Model Context Protocol servers wrapping Metasploit,
+                  Kali, OWASP ZAP, and Burp Suite so an agent can drive the same
+                  tools I already trust. MetasploitMCP is an RPC bridge exposing
+                  12+ functions (list exploits, generate payload, run module,
+                  list sessions). Transports: stdio and HTTP/SSE. Dual endpoints:
+                  Anthropic public API and AWS Bedrock. The agent runs the tool.
+                  I decide what to exploit.
+                </p>
+              </div>
+              <p class="work-meta">MCP · Python · TypeScript</p>
+            </div>
+          </li>
+          <li>
+            <div class="work-row">
+              <div class="work-main">
+                <h3>Compiled second brain</h3>
+                <p>
+                  Ten years of lab notes (OSCP, OSCE, AD labs, HTB, API testing,
+                  AWS security) compiled into queryable wikis. Methodology,
+                  attack paths, tool notes. Raw sources stay. Synthesized
+                  articles are what the agents retrieve mid-engagement. The
+                  multiplier only holds if the model is pulling my tradecraft,
+                  not folklore.
+                </p>
+              </div>
+              <p class="work-meta">Obsidian · retrieval · tradecraft</p>
+            </div>
+          </li>
+          <li>
+            <div class="work-row">
+              <div class="work-main">
+                <h3>Multi-MCP assessor console</h3>
+                <p>
+                  1,200-line GUI for concurrent multi-MCP work. Dynamic tool
+                  discovery, context-aware selection, markdown report rendering.
+                  Built so a finding can go from agent output to an assessor-ready
+                  page without a copy-paste graveyard.
+                </p>
+              </div>
+              <p class="work-meta">Python · GUI · reporting</p>
             </div>
           </li>
         </ul>
@@ -218,31 +228,31 @@
       <section id="practice" class="section practice" aria-labelledby="practice-title">
         <div class="section-head">
           <p class="eyebrow">Practice</p>
-          <h2 id="practice-title">How the work actually gets done.</h2>
+          <h2 id="practice-title">The judgment is mine. The grind is automated.</h2>
         </div>
         <div class="practice-grid">
           <article>
-            <h3>Automate the mechanical</h3>
+            <h3>Tradecraft first</h3>
             <p>
-              Reconnaissance, enumeration, evidence collection, initial
-              reporting. AI handles the systematic work. Humans handle
-              creative exploitation and business risk.
+              10–100× of weak judgment is still a bad report. OSCP, OSCE,
+              a 0-day, and 40+ live assessments are the reason an agent is
+              allowed near a scope. The model does not get to invent methodology.
             </p>
           </article>
           <article>
-            <h3>Intelligence, not checklists</h3>
+            <h3>Agents take the mechanical week</h3>
             <p>
-              A vulnerability scan is a map of where to look, not a report.
-              The value is in deciding which finding a real attacker would
-              actually use, and what it costs the business.
+              Recon, enumeration, evidence collection, first-pass reporting,
+              parallel boxes. That used to eat the calendar. Now it runs in
+              loops while I work the path that actually matters.
             </p>
           </article>
           <article>
-            <h3>Build a loop that verifies</h3>
+            <h3>I still sign the finding</h3>
             <p>
-              Think, act, observe, repeat until the goal is a file you can
-              open. Repro steps, a patch someone can merge, a walkthrough an
-              analyst can replay. If it does not lead to a fix, it did not happen.
+              Which vuln a real attacker would use. What it costs the business.
+              Repro steps and a patch someone can merge. If it does not lead
+              to a fix, it did not happen.
             </p>
           </article>
         </div>
@@ -251,9 +261,28 @@
       <section id="notes" class="section notes" aria-labelledby="notes-title">
         <div class="section-head">
           <p class="eyebrow">Field notes</p>
-          <h2 id="notes-title">Lessons from 40+ assessments and a decade of notes.</h2>
+          <h2 id="notes-title">What 10–100× actually means, and what it does not.</h2>
         </div>
         <div class="notes-list">
+          <article>
+            <p class="note-date">On the multiplier</p>
+            <h3>10–100× is hours, not taste</h3>
+            <p>
+              The gain is recon, enum, evidence, first-pass reports, and
+              parallel targets. Not the moment you decide which finding a
+              real attacker would use. That call is still a pentester’s.
+            </p>
+          </article>
+          <article>
+            <p class="note-date">On agents, 2026</p>
+            <h3>Kali is a UI for humans</h3>
+            <p>
+              Frontier models install their own tools, live in bash, and
+              write bespoke Python exploits. Wrap tools when the human still
+              needs a lever. Otherwise get out of the way and keep the
+              judgment.
+            </p>
+          </article>
           <article>
             <p class="note-date">On MCP architecture</p>
             <h3>Wrap the tool, not the workflow</h3>
@@ -264,31 +293,13 @@
             </p>
           </article>
           <article>
-            <p class="note-date">On agents, 2026</p>
-            <h3>Kali is a UI for humans</h3>
-            <p>
-              Frontier models install their own tools, live in bash, and
-              write bespoke Python exploits. A lot of pentest MCPs are
-              optional once the model can reach a shell. Wrap tools when
-              the human still needs a lever. Otherwise get out of the way.
-            </p>
-          </article>
-          <article>
-            <p class="note-date">On cost</p>
-            <h3>Model selection is a budget decision</h3>
-            <p>
-              Opus spent $200 on easy boxes. Sonnet is almost as good and
-              5x cheaper. Medium machines wander and eat tokens. Skip hash
-              cracking in the agent loop: no skill, high spend.
-            </p>
-          </article>
-          <article>
             <p class="note-date">On isolation</p>
             <h3>Scope contamination kills credibility</h3>
             <p>
               Multi-client work requires hard isolation. No shared IPs,
               no shared tooling state, no ambient credentials.
-              The infrastructure is the first thing you audit.
+              The infrastructure is the first thing you audit. Agents do
+              not get a pass on that.
             </p>
           </article>
           <article>
@@ -302,11 +313,11 @@
           </article>
           <article>
             <p class="note-date">On context</p>
-            <h3>Agents are only as good as what they can retrieve</h3>
+            <h3>Agents are only as good as the tradecraft they retrieve</h3>
             <p>
               A chatbot can wing it. An agent with a shell cannot.
-              The second brain exists so the model pulls methodology,
-              not folklore, when it decides the next command.
+              The second brain exists so the model pulls my methodology
+              when it decides the next command, not a generic playbook.
             </p>
           </article>
         </div>
@@ -347,11 +358,11 @@
 
       <section id="contact" class="section contact" aria-labelledby="contact-title">
         <p class="eyebrow">Contact</p>
-        <h2 id="contact-title">A specific problem beats a warm intro.</h2>
+        <h2 id="contact-title">A specific scope beats a warm intro.</h2>
         <p class="contact-lede">
-          Security assessment, MCP architecture, agent loops, retrieval over
-          tradecraft. Tell me what you are trying to protect and I will tell
-          you if I can help.
+          External, internal, AD, web, API. I bring the tradecraft and the
+          agents, so one operator can cover more ground. Tell me what is in
+          scope and I will tell you if I can help.
         </p>
         <p class="contact-links">
           <a class="contact-email" href="mailto:cdrkennedy@gmail.com"

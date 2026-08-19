@@ -237,6 +237,7 @@ html[data-theme="light"] .lights-knob {
   font-style: normal;
   color: var(--mark);
   box-shadow: inset 0 -0.12em 0 var(--mark);
+  white-space: nowrap;
 }
 
 .lede {
