@@ -1,10 +1,10 @@
-# JK — personal site
+# John Kennedy — portfolio
 
 A one-page portfolio. Static HTML, no build step, dark and light themes.
 
-## Run it
+**Live site:** [clubjk.github.io/jk-portfolio](https://clubjk.github.io/jk-portfolio/)
 
-Open `index.html` in a browser, or from this folder:
+## Run locally
 
 ```bash
 python3 -m http.server 5173
@@ -12,7 +12,18 @@ python3 -m http.server 5173
 
 Then visit [http://localhost:5173](http://localhost:5173).
 
-The **Lights** switch in the header toggles theme. The first visit follows the system preference; after that, the choice is stored in `localStorage`.
+## How it updates
+
+Every Monday at 9am, a launchd job on the local Mac runs `scripts/weekly-update.sh`. It:
+
+1. Reads `JK_Resume_AI_Security_Engineer.md` from the Obsidian vault on the external drive
+2. Checks if the resume changed since last sync (MD5 hash)
+3. If changed, copies it into the repo, commits, and pushes
+4. GitHub Actions deploys to Pages on push
+
+The external drive must be mounted for the sync to run. Logs go to `/tmp/jk-portfolio-update.log`.
+
+To run manually: `./scripts/weekly-update.sh`
 
 ## Edit
 
@@ -21,10 +32,11 @@ The **Lights** switch in the header toggles theme. The first visit follows the s
 | `index.html` | Copy, structure, contact links |
 | `styles.css` | Visual system |
 | `script.js` | Theme toggle |
+| `fonts.css` | Self-hosted font declarations |
+| `fonts/` | woff2 font files (latin + latin-ext) |
 | `DESIGN.md` | Tokens and rules — read before visual changes |
-
-Swap the work rows, notes, and email for your own. Keep the dossier fields factual.
+| `scripts/weekly-update.sh` | Weekly resume sync script |
 
 ## Deploy
 
-Any static host works: GitHub Pages, Netlify, Cloudflare Pages. Publish the folder as-is.
+Pushes to `main` trigger GitHub Actions which deploys to GitHub Pages. No manual deploy needed.
