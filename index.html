@@ -6,13 +6,13 @@
     <title>John Kennedy — security engineer &amp; AI systems architect</title>
     <meta
       name="description"
-      content="John Kennedy builds AI-driven security automation. Custom MCP servers, penetration testing agents, and infrastructure that holds under pressure."
+      content="John Kennedy builds AI-driven security automation. Custom MCP servers, pentest agents, a compiled second brain of tradecraft, and a disclosed 0-day."
     />
     <meta name="theme-color" content="#0A1220" />
     <meta property="og:title" content="John Kennedy — security engineer &amp; AI systems architect" />
     <meta
       property="og:description"
-      content="AI-driven security automation, custom MCP servers, and penetration testing infrastructure."
+      content="AI-driven security automation, custom MCP servers, pentest agents, and a decade of notes the models can query."
     />
     <meta property="og:type" content="website" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -42,6 +42,7 @@
         <a href="#work">Work</a>
         <a href="#practice">Practice</a>
         <a href="#notes">Notes</a>
+        <a href="#writing">Writing</a>
         <a href="#contact">Contact</a>
       </nav>
       <button
@@ -70,9 +71,9 @@
             <em>thinking creatively</em>.
           </h1>
           <p class="lede">
-            Custom MCP servers, AI-driven agents, and infrastructure that holds
-            under pressure. 40+ assessments, 4 production security MCPs, and a
-            philosophy that automation is intelligence, not a checklist.
+            Agent loops, custom MCP servers, and a decade of notes compiled so
+            models can retrieve tradecraft. 40+ assessments, a disclosed 0-day,
+            and a practice that treats automation as intelligence, not a checklist.
           </p>
         </div>
 
@@ -93,8 +94,12 @@
               <dd>Omaha, NE</dd>
             </div>
             <div>
+              <dt>Background</dt>
+              <dd>Navy IW · USSTRATCOM</dd>
+            </div>
+            <div>
               <dt>Certs</dt>
-              <dd>OSCP · eCPPT · SANS 560</dd>
+              <dd>OSCP · OSCE · eCPPT · SLAE64 · SANS 560</dd>
             </div>
             <div>
               <dt>Reach</dt>
@@ -116,11 +121,32 @@
           <li>
             <div class="work-row">
               <div class="work-main">
+                <h3>htb-pwner agent</h3>
+                <p>
+                  A Claude Code agent that takes a target IP, fans out subagents,
+                  and returns user/root plus a walkthrough an intermediate analyst
+                  can replay. Each finding gets a description and a fix. Brute force
+                  is skipped on purpose: it burns tokens and proves nothing. HTB API
+                  token wired in so the agent can spawn boxes and submit flags.
+                  Blue, Lame, Legacy, Devel, Strutted, Bamboo, Arctic, Editorial.
+                  Later runs dropped the Kali GUI entirely. Frontier models install
+                  their own tools and write bespoke Python exploits.
+                </p>
+              </div>
+              <p class="work-meta">Claude Code · HTB · agents</p>
+            </div>
+          </li>
+          <li>
+            <div class="work-row">
+              <div class="work-main">
                 <h3>Security MCP servers</h3>
                 <p>
                   Four custom Model Context Protocol servers wrapping Metasploit,
-                  Kali, OWASP ZAP, and Burp Suite. Claude orchestrates the tools;
-                  the human decides what to exploit.
+                  Kali, OWASP ZAP, and Burp Suite. MetasploitMCP is an RPC bridge
+                  exposing 12+ functions (list exploits, generate payload, run
+                  module, list sessions). Transports: stdio and HTTP/SSE. Dual
+                  endpoints: Anthropic public API and AWS Bedrock. Claude
+                  orchestrates the tools; the human decides what to exploit.
                 </p>
               </div>
               <p class="work-meta">MCP · Python · TypeScript</p>
@@ -129,14 +155,16 @@
           <li>
             <div class="work-row">
               <div class="work-main">
-                <h3>AI-driven pentest automation</h3>
+                <h3>Compiled second brain</h3>
                 <p>
-                  Automated HTB machine assessments end-to-end: enumeration,
-                  vulnerability ID, exploitation, flag extraction, and
-                  Core Impact-style reporting. 8+ machines, 5x cost reduction.
+                  Ten years of raw lab notes (OSCP, OSCE, AD labs, HTB, API
+                  testing, AWS security) compiled into queryable wikis: pentest
+                  methodology, Active Directory attack paths, API testing, and AI
+                  tooling. Raw sources stay. Synthesized articles are what the
+                  agents actually retrieve. The vault is the context window.
                 </p>
               </div>
-              <p class="work-meta">Claude · agents · automation</p>
+              <p class="work-meta">Obsidian · retrieval · tradecraft</p>
             </div>
           </li>
           <li>
@@ -150,6 +178,25 @@
                 </p>
               </div>
               <p class="work-meta">AWS · VPC · OpenVPN</p>
+            </div>
+          </li>
+          <li>
+            <div class="work-row">
+              <div class="work-main">
+                <h3>Disclosed 0-day, BSides Iowa</h3>
+                <p>
+                  Remote SEH buffer overflow in Easy File Sharing Web Server 7.2,
+                  published as
+                  <a href="https://www.exploit-db.com/exploits/42261">EDB-42261</a>
+                  (2017). Talk:
+                  <a href="https://youtu.be/YoNrNBnmwuY"
+                    >Finding &amp; Exploiting Zerodays (Yes, you can do this!)</a
+                  >
+                  at BSides Iowa 2018. Same thread as SLAE64: custom shellcode,
+                  encoders, and an AES crypter.
+                </p>
+              </div>
+              <p class="work-meta">Exploit-DB · BSides · SLAE64</p>
             </div>
           </li>
           <li>
@@ -191,11 +238,11 @@
             </p>
           </article>
           <article>
-            <h3>Ship the remediation</h3>
+            <h3>Build a loop that verifies</h3>
             <p>
-              Repro steps, CVSS scores, and a patch someone can merge.
-              Executive-ready reports with risk prioritization. If it
-              does not lead to a fix, it did not happen.
+              Think, act, observe, repeat until the goal is a file you can
+              open. Repro steps, a patch someone can merge, a walkthrough an
+              analyst can replay. If it does not lead to a fix, it did not happen.
             </p>
           </article>
         </div>
@@ -204,7 +251,7 @@
       <section id="notes" class="section notes" aria-labelledby="notes-title">
         <div class="section-head">
           <p class="eyebrow">Field notes</p>
-          <h2 id="notes-title">Lessons from 40+ assessments.</h2>
+          <h2 id="notes-title">Lessons from 40+ assessments and a decade of notes.</h2>
         </div>
         <div class="notes-list">
           <article>
@@ -217,12 +264,22 @@
             </p>
           </article>
           <article>
+            <p class="note-date">On agents, 2026</p>
+            <h3>Kali is a UI for humans</h3>
+            <p>
+              Frontier models install their own tools, live in bash, and
+              write bespoke Python exploits. A lot of pentest MCPs are
+              optional once the model can reach a shell. Wrap tools when
+              the human still needs a lever. Otherwise get out of the way.
+            </p>
+          </article>
+          <article>
             <p class="note-date">On cost</p>
             <h3>Model selection is a budget decision</h3>
             <p>
-              Switching from Opus to Sonnet cut assessment costs by 5x
-              without losing quality. Token budgeting and intelligent
-              model selection matter more than prompt engineering.
+              Opus spent $200 on easy boxes. Sonnet is almost as good and
+              5x cheaper. Medium machines wander and eat tokens. Skip hash
+              cracking in the agent loop: no skill, high spend.
             </p>
           </article>
           <article>
@@ -234,21 +291,74 @@
               The infrastructure is the first thing you audit.
             </p>
           </article>
+          <article>
+            <p class="note-date">On loops</p>
+            <h3>Do not prompt. Build a system that prompts itself.</h3>
+            <p>
+              A loop has a trigger, a verifiable end state, actions, a
+              stop condition, and memory. Memory is what separates a loop
+              that learns from one that spins. Single prompts are for demos.
+            </p>
+          </article>
+          <article>
+            <p class="note-date">On context</p>
+            <h3>Agents are only as good as what they can retrieve</h3>
+            <p>
+              A chatbot can wing it. An agent with a shell cannot.
+              The second brain exists so the model pulls methodology,
+              not folklore, when it decides the next command.
+            </p>
+          </article>
         </div>
+      </section>
+
+      <section id="writing" class="section writing" aria-labelledby="writing-title">
+        <div class="section-head">
+          <p class="eyebrow">Writing</p>
+          <h2 id="writing-title">Public notes, not marketing.</h2>
+        </div>
+        <ul class="writing-list">
+          <li>
+            <a href="https://www.jkcybersecurity.org/2026/03/from-zero-to-automated-my-solo-devops.html"
+              >From zero to automated: a one-person shop with MCP and a homelab</a
+            >
+            <span class="writing-meta">Mar 2026</span>
+          </li>
+          <li>
+            <a href="https://www.jkcybersecurity.org/2026/03/ai-agents-are-having-their-moment-of_01089952550.html"
+              >AI agents are having their moment of truth</a
+            >
+            <span class="writing-meta">Mar 2026</span>
+          </li>
+          <li>
+            <a href="https://www.jkcybersecurity.org/2026/03/the-27-second-breakout-how-ai-enabled.html"
+              >The 27-second breakout</a
+            >
+            <span class="writing-meta">Mar 2026</span>
+          </li>
+          <li>
+            <a href="https://www.jkcybersecurity.org/2018/11/here-is-link-to-my-bsides-talk.html"
+              >BSides Iowa: finding and exploiting zerodays</a
+            >
+            <span class="writing-meta">Nov 2018</span>
+          </li>
+        </ul>
       </section>
 
       <section id="contact" class="section contact" aria-labelledby="contact-title">
         <p class="eyebrow">Contact</p>
         <h2 id="contact-title">A specific problem beats a warm intro.</h2>
         <p class="contact-lede">
-          Security assessment, MCP architecture, AI-driven automation.
-          Tell me what you are trying to protect and I will tell you if I can help.
+          Security assessment, MCP architecture, agent loops, retrieval over
+          tradecraft. Tell me what you are trying to protect and I will tell
+          you if I can help.
         </p>
         <p class="contact-links">
           <a class="contact-email" href="mailto:cdrkennedy@gmail.com"
             >cdrkennedy@gmail.com</a
           >
           <a href="https://github.com/clubjk">GitHub</a>
+          <a href="https://www.jkcybersecurity.org">Blog</a>
         </p>
       </section>
     </main>

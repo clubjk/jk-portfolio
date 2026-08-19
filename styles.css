@@ -437,6 +437,44 @@ html[data-theme="light"] .lights-knob {
   text-transform: uppercase;
 }
 
+.writing-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+
+.writing-list li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--space-3);
+  align-items: baseline;
+  padding: 1.1rem 0.35rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.writing-list a {
+  color: var(--chalk);
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+
+.writing-list a:hover {
+  color: var(--mark);
+}
+
+.writing-meta {
+  color: var(--mute);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 .contact {
   padding-bottom: var(--space-7);
 }
@@ -495,11 +533,13 @@ html[data-theme="light"] .lights-knob {
   .hero,
   .practice-grid,
   .notes-list,
-  .work-row {
+  .work-row,
+  .writing-list li {
     grid-template-columns: 1fr;
   }
 
-  .work-meta {
+  .work-meta,
+  .writing-meta {
     white-space: normal;
   }
 
@@ -511,7 +551,19 @@ html[data-theme="light"] .lights-knob {
 
 @media (max-width: 560px) {
   .site-header {
+    flex-wrap: wrap;
     gap: var(--space-2);
+  }
+
+  .nav {
+    order: 3;
+    flex-basis: 100%;
+    margin-left: 0;
+    padding-top: 0.15rem;
+  }
+
+  .lights {
+    margin-left: auto;
   }
 
   .dossier dl > div {
